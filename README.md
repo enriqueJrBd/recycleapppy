@@ -1,2 +1,3 @@
 # recycleapppy
 YO PUEDO 
+##Funcionalidades 
