@@ -1,0 +1,112 @@
+
+
+
+
+<ion-toolbar color="primary"> 
+  <ion-title>Reciclapp</ion-title>
+      <ion-buttons color="primary">
+      <ion-menu-button slot="start" autoHide="false" color="light"></ion-menu-button>
+      <ion-button href="http://localhost:8100/principal">
+        <ion-icon slot="end" name="home-outline"></ion-icon>
+      </ion-button>
+      </ion-buttons>
+    
+  </ion-toolbar>
+  
+  <ion-app>
+    
+      <ion-menu side="start" menuId="first" contentId="main">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="medium">
+        <ion-list color="medium">
+         
+          <ion-item href="http://localhost:8100/config" color="light">
+             Configuraciones 
+              <ion-icon name="construct-outline" slot="end">
+  
+              </ion-icon>
+          </ion-item>
+         
+          <ion-item href="http://localhost:8100/perfil" color="light">
+             Perfil 
+              <ion-icon name="person-outline" slot="end">
+               
+              </ion-icon>
+  
+          </ion-item>
+          
+          
+          <ion-item href="http://localhost:8100/politica" color="light">
+              Politicas y Condiciones 
+               <ion-icon name="warning-outline" slot="end">
+   
+               </ion-icon>
+           </ion-item>
+          
+          <ion-item href="http://localhost:8100/login" color="light">
+              Cerrar sesion 
+              <ion-icon name="exit-outline" slot="end">
+  
+              </ion-icon>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+      
+    </ion-menu>
+  
+      <ion-router-outlet id="main"></ion-router-outlet>
+      
+  <ion-content [fullscreen]="true">
+    <ion-card-content>
+      <ion-card>
+        <ion-card-header >
+          <ion-img  src="https://www.itaipu.gov.br/sites/default/files/u78/RECICLAJE%202018%20NOTA%201_0.jpeg"></ion-img>
+      
+          <ion-card-subtitle >
+             
+               
+          </ion-card-subtitle>
+          <ion-card-title>Reciclados</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         Terminados
+         <ion-card-content>
+         Gracias a la donacion del usuario Jose Talavera pudimos reinventar desde basuras reciclables, algunos muebles y utilidades del hogar.
+        </ion-card-content>
+         Este es una forma ilustrativa puede ser modificado.
+       
+        
+        </ion-card-content>
+       
+      
+      </ion-card>
+    
+      <ion-card>
+        <ion-card-header >
+          <ion-img  src="https://www.ip.gov.py/ip/wp-content/uploads/2020/08/Sillones-cubiertas.jpg"></ion-img>
+      
+          <ion-card-subtitle >
+             
+               
+          </ion-card-subtitle>
+          <ion-card-title>Reciclados</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+         A la venta Trabajo terminada 
+         <ion-card-content>
+         Sillones terminado super comodos, reinventados desde basuras indegradables, (Numaticos)
+        </ion-card-content>
+       
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content> 
+  </ion-content>
+      
+    
+  </ion-app>
